@@ -1,0 +1,196 @@
+
+@import url('https://fonts.googleapis.com/css?family=Be+Vietnam|Roboto:400,700,900&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Be Vietnam', sans-serif;
+}
+.underline{
+    width: 7%;
+    margin: 20px auto;
+    height: 4px;
+    background: var(--orange);
+}
+.small-underline{
+    width: 7%;
+    margin: 20px auto;
+    height: 4px;
+    background: var(--white);
+}
+:root{
+    --orange:rgb(255, 102, 0);
+    --grey:rgb(153, 153, 153);
+    --white:#ffffff;
+    --brown:rgb(102, 51, 0);
+}
+/******* NAVIGATION ******/
+.navbar{
+    background: rgba(255,255,255,0.6)!important;
+}
+.navbar-brand{
+    color: var(--grey)!important;
+    font-family:'Be Vietnam', sans-serif;
+    font-weight: 900;
+}
+.navbar-brand:hover{
+    color: var(--white)!important;
+}
+.nav-link{
+    color: var(--grey)!important;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: 40px;
+    cursor: pointer;
+    transition: 0.4s all;
+}
+.nav-link:hover{
+    color: var(--white)!important;
+    transform: scale(1.1);
+}
+/******* ABOUT ******/
+#about{
+    background-image:linear-gradient(rgb(102, 51, 0,0.6),rgb(102, 51, 0,0.6)),url(img/header.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#about h1{
+    font-size: 3rem;
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+#about h5{
+    color: var(--white);
+}
+#about .btn{
+    border: none;
+    padding: 20px 35px;
+    border-radius: 15px;
+    background: var(--orange);
+    color: var(--white);
+    font-family: 'Be Vietnam', sans-serif;
+    margin-top: 40px;
+    font-weight: 900;
+    text-transform: uppercase;
+    transition: 0.4s ease;
+}
+#about .btn:hover{
+    transform: scale(1.1);
+    color: var(--orange);
+    background: var(--white);
+}
+/******* GOT ******/
+.got{
+    background: var(--orange);
+    height: 50vh;
+}
+.got h2{
+    color: var(--white);
+}
+.got .btn{
+    border: none;
+    padding: 20px 35px;
+    border-radius: 15px;
+    background: var(--white);
+    font-family: 'Be Vietnam', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    transition: 0.4s ease;
+}
+.got .btn:hover{
+    transform: scale(1.1);
+    background: var(--grey);
+}
+/******* SERVICES ******/
+#services i{
+    font-size: 4rem;
+    color: var(--orange);
+}
+/******* PROJECTS ******/
+#projects img{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgb(255, 102, 0,0.6);
+}
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.project:hover .overlay {
+  opacity: 1;
+}
+.project{
+    position: relative;
+}
+.project a {
+    color: var(--orange);
+    text-decoration: none;
+    background-color: transparent;
+}
+/******* DOWNLOADS ******/
+.download{
+    background: var(--grey);
+    height: 30vh;
+}
+.download .btn{
+    border: none;
+    padding: 20px 35px;
+    border-radius: 15px;
+    background: var(--orange);
+    color: var(--white);
+    font-family: 'Be Vietnam', sans-serif;
+    margin-top: 40px;
+    font-weight: 900;
+    text-transform: uppercase;
+    transition: 0.4s ease;
+}
+.download .btn:hover{
+    transform: scale(1.1);
+    color: var(--orange);
+    background: var(--white);
+}
+/******* FOOTER ******/
+#foter i{
+    font-size: 4rem;
+    color: var(--grey);
+}
+#foter a{
+    color: var(--orange);
+    font-size: 1.3rem;
+}
+#foter p{
+    font-size: 1.3rem;
+}
+footer{
+    background: var(--grey);
+}
+/******* Media query ******/
+@media only screen and (max-width: 600px){
+    #about h1{
+        font-size: 2rem;
+    }
+}
